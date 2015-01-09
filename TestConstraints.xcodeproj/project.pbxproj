@@ -13,6 +13,7 @@
 		FBDE496B1A5FC9AF00132014 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDE496A1A5FC9AF00132014 /* Images.xcassets */; };
 		FBDE496E1A5FC9AF00132014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDE496C1A5FC9AF00132014 /* Main.storyboard */; };
 		FBDE497A1A5FC9AF00132014 /* TestConstraintsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDE49791A5FC9AF00132014 /* TestConstraintsTests.m */; };
+		FBF023F51A600D2D00977609 /* NSView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF023F41A600D2D00977609 /* NSView+Constraint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		FBDE49731A5FC9AF00132014 /* TestConstraintsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestConstraintsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDE49781A5FC9AF00132014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBDE49791A5FC9AF00132014 /* TestConstraintsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestConstraintsTests.m; sourceTree = "<group>"; };
+		FBF023F31A600D2D00977609 /* NSView+Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Constraint.h"; sourceTree = "<group>"; };
+		FBF023F41A600D2D00977609 /* NSView+Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Constraint.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		FBDE495F1A5FC9AF00132014 /* TestConstraints */ = {
 			isa = PBXGroup;
 			children = (
+				FBF023F21A600D2D00977609 /* NSView+Constraints */,
 				FBDE49621A5FC9AF00132014 /* AppDelegate.h */,
 				FBDE49631A5FC9AF00132014 /* AppDelegate.m */,
 				FBDE49671A5FC9AF00132014 /* ViewController.h */,
@@ -115,6 +119,15 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		FBF023F21A600D2D00977609 /* NSView+Constraints */ = {
+			isa = PBXGroup;
+			children = (
+				FBF023F31A600D2D00977609 /* NSView+Constraint.h */,
+				FBF023F41A600D2D00977609 /* NSView+Constraint.m */,
+			);
+			path = "NSView+Constraints";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -217,6 +230,7 @@
 			files = (
 				FBDE49691A5FC9AF00132014 /* ViewController.m in Sources */,
 				FBDE49661A5FC9AF00132014 /* main.m in Sources */,
+				FBF023F51A600D2D00977609 /* NSView+Constraint.m in Sources */,
 				FBDE49641A5FC9AF00132014 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +418,7 @@
 				FBDE497F1A5FC9AF00132014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBDE49801A5FC9AF00132014 /* Build configuration list for PBXNativeTarget "TestConstraintsTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +427,7 @@
 				FBDE49821A5FC9AF00132014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
